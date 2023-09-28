@@ -23,7 +23,7 @@ const Login = () => {
     <div className="formContainer">
         {/* <img src={bg} alt="" /> */}
       <div className="formWrapper">
-        <span className="logo">Messenger</span>
+        <span className="logo">ByteBabble</span>
         <span className="title">Login</span>
         <form onSubmit={handleSubmit}>
           <input required type="email" placeholder="email" />

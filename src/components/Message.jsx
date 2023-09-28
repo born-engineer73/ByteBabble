@@ -13,9 +13,10 @@ const Message = ({ message }) => {
   }, [message]);
 
   return (
+    {{message.text}!="" &&
     <div
-      ref={ref}
-      className={`message ${message.senderId === currentUser.uid && "owner"}`}
+    ref={ref}
+    className={`message ${message.senderId === currentUser.uid && "owner"}`}
     >
       <div className="messageInfo">
         <img
@@ -32,7 +33,9 @@ const Message = ({ message }) => {
         <p>{message.text}</p>
         {message.img && <img src={message.img} alt="" />}
       </div>
-    </div>
+      
+      </div>
+    }
   );
 };
 

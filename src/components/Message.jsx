@@ -13,7 +13,7 @@ const Message = ({ message }) => {
   }, [message]);
 
   return (
-    {{message.text}!="" &&
+    
     <div
     ref={ref}
     className={`message ${message.senderId === currentUser.uid && "owner"}`}
@@ -35,7 +35,7 @@ const Message = ({ message }) => {
       </div>
       
       </div>
-    }
+    
   );
 };
 
